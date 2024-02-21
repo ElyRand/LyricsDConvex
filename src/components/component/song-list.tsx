@@ -48,7 +48,7 @@ export function SongList() {
 }
 
 
-function PlayIcon(props) {
+function PlayIcon(props: any) {
   return (
     <svg
       {...props}
