@@ -1,5 +1,5 @@
 import { ConvexHttpClient } from "convex/browser";
 
-const httpClient = new ConvexHttpClient("https://outgoing-robin-225.convex.cloud");
+const httpClient = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 
 export default httpClient;
