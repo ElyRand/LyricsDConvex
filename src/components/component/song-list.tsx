@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button"
 import { CardHeader, Card } from "@/components/ui/card"
 import { useQuery } from "convex/react"
 import { api } from "../../../convex/_generated/api"
+import { useRouter } from "next/router";
 
 export function SongList() {
+  const router = useRouter();
   const songs = useQuery(api.songs.list, {});
   return (
     <div className="px-4 md:px-6">

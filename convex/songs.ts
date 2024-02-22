@@ -23,3 +23,10 @@ export const add = mutation({
     });
   },
 });
+
+export const get = query({
+  args: { id: v.id("songs") },
+  handler: async (ctx, { id }) => {
+    return await ctx.table("songs").get(id);
+  },
+});
